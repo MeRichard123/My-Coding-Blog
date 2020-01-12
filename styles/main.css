@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 50vh;
+  background: url("../img/cover london.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav #logo {
+  height: 10vh;
+}
+
+header nav form {
+  margin-right: 1rem;
+}
+
+header nav .form-bar {
+  border: #515151 solid;
+  border-radius: 25px;
+}
+
+header nav .btn {
+  border: #515151 solid;
+  color: #515151;
+}
+
+header nav .btn:hover {
+  color: white;
+  background: #515151;
+}
+
+main .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 5rem;
+  text-decoration: underline;
+}
+
+main .card {
+  background: #e6c2c2;
+  margin-bottom: 2.5rem;
+}
+
+main .card .hide {
+  display: none;
+}
+
+main .card-container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 1rem;
+}
+
+footer {
+  height: 10vh;
+  background: #b79393;
+  font-size: 1.1rem;
+}
+
+footer .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  line-height: 8vh;
+}
+
+@media screen and (max-width: 740px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .btn {
+    -webkit-transform: translateX(250%);
+            transform: translateX(250%);
+    -webkit-filter: contrast(2);
+            filter: contrast(2);
+  }
+  nav #logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

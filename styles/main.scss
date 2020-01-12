@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 50vh;
+  background: url("../img/cover\ london.jpg");
+  background-size: cover;
+  background-position: center;
+  nav {
+    display: flex;
+    flex: 1 1 10rem;
+    justify-content: space-between;
+    #logo {
+      height: 10vh;
+    }
+    form {
+      margin-right: 1rem;
+    }
+    .form-bar {
+      border: #515151 solid;
+      border-radius: 25px;
+    }
+    .btn {
+      border: #515151 solid;
+      color: #515151;
+      &:hover {
+        color: white;
+        background: #515151;
+      }
+    }
+  }
+}
+
+main {
+  .title {
+    display: flex;
+    justify-content: center;
+    line-height: 5rem;
+    text-decoration: underline;
+  }
+  .card {
+    background: #e6c2c2;
+    margin-bottom: 2.5rem;
+    .hide {
+      display: none;
+    }
+  }
+  .card-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 1rem;
+  }
+}
+footer {
+  height: 10vh;
+  background: #b79393;
+  font-size: 1.1rem;
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 8vh;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    .btn {
+      transform: translateX(250%);
+      filter: contrast(2);
+    }
+    #logo {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
