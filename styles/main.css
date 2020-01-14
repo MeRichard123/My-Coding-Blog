@@ -96,6 +96,9 @@ footer .flex-container {
 }
 
 @media screen and (max-width: 740px) {
+  html {
+    font-size: 50%;
+  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
