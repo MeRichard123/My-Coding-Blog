@@ -73,9 +73,16 @@ footer {
   html {
     font-size: 50%;
   }
+  header {
+    height: 25vh;
+  }
   nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    .form-bar {
+      width: 100vw !important;
+    }
     .btn {
       transform: translateX(250%);
       filter: contrast(2);
