@@ -5,7 +5,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 header {
   height: 50vh;
   background: url("../img/cover\ london.jpg");
@@ -37,7 +41,6 @@ header {
 }
 
 main {
-  height: 50vh;
   .title {
     display: flex;
     justify-content: center;
@@ -58,16 +61,6 @@ main {
     grid-gap: 1rem;
   }
 }
-// body {
-//   display: flex;
-//   flex-direction: column;
-// }
-// main {
-//   flex: 1 0 auto;
-// }
-// footer {
-//   flex-shrink: 0;
-// }
 footer {
   height: 10vh;
   background: #b79393;
@@ -78,6 +71,7 @@ footer {
     text-align: center;
     line-height: 8vh;
   }
+  margin-top: auto;
 }
 
 @media screen and (max-width: 740px) {
@@ -86,9 +80,6 @@ footer {
   }
   header {
     height: 25vh;
-  }
-  main {
-    height: 75vh;
   }
   nav {
     display: flex;
