@@ -82,18 +82,19 @@ footer {
     font-size: 50%;
   }
   header {
-    height: 25vh;
+    height: 20vh;
   }
   nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .form-bar {
-      width: 100vw !important;
+    #search-blog {
+      display: flex;
+      width: 100%;
     }
     .btn {
       background: white;
-      align-self: center;
+      width: 100%;
     }
     #logo {
       justify-content: center;

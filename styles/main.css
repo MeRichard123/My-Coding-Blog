@@ -116,7 +116,7 @@ footer .flex-container {
     font-size: 50%;
   }
   header {
-    height: 25vh;
+    height: 20vh;
   }
   nav {
     display: -webkit-box;
@@ -130,14 +130,15 @@ footer .flex-container {
         -ms-flex-align: center;
             align-items: center;
   }
-  nav .form-bar {
-    width: 100vw !important;
+  nav #search-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
   }
   nav .btn {
     background: white;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    width: 100%;
   }
   nav #logo {
     -webkit-box-pack: center;
