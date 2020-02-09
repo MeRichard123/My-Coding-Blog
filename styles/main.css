@@ -82,6 +82,7 @@ footer {
   height: 10vh;
   background: #b79393;
   font-size: 1.1rem;
+  bottom: 0;
 }
 
 footer .flex-container {
@@ -93,6 +94,7 @@ footer .flex-container {
           justify-content: center;
   text-align: center;
   line-height: 8vh;
+  bottom: 0;
 }
 
 @media screen and (max-width: 740px) {
@@ -118,10 +120,7 @@ footer .flex-container {
     width: 100vw !important;
   }
   nav .btn {
-    -webkit-transform: translateX(250%);
-            transform: translateX(250%);
-    -webkit-filter: contrast(2);
-            filter: contrast(2);
+    background: white;
   }
   nav #logo {
     -webkit-box-pack: center;

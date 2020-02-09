@@ -61,11 +61,13 @@ footer {
   height: 10vh;
   background: #b79393;
   font-size: 1.1rem;
+  bottom: 0;
   .flex-container {
     display: flex;
     justify-content: center;
     text-align: center;
     line-height: 8vh;
+    bottom: 0;
   }
 }
 
@@ -84,8 +86,7 @@ footer {
       width: 100vw !important;
     }
     .btn {
-      transform: translateX(250%);
-      filter: contrast(2);
+      background: white;
     }
     #logo {
       justify-content: center;
