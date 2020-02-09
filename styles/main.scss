@@ -37,6 +37,7 @@ header {
 }
 
 main {
+  height: 50vh;
   .title {
     display: flex;
     justify-content: center;
@@ -57,17 +58,25 @@ main {
     grid-gap: 1rem;
   }
 }
+// body {
+//   display: flex;
+//   flex-direction: column;
+// }
+// main {
+//   flex: 1 0 auto;
+// }
+// footer {
+//   flex-shrink: 0;
+// }
 footer {
   height: 10vh;
   background: #b79393;
   font-size: 1.1rem;
-  bottom: 0;
   .flex-container {
     display: flex;
     justify-content: center;
     text-align: center;
     line-height: 8vh;
-    bottom: 0;
   }
 }
 
@@ -78,6 +87,9 @@ footer {
   header {
     height: 25vh;
   }
+  main {
+    height: 75vh;
+  }
   nav {
     display: flex;
     flex-direction: column;
@@ -87,6 +99,7 @@ footer {
     }
     .btn {
       background: white;
+      align-self: center;
     }
     #logo {
       justify-content: center;

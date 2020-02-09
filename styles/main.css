@@ -49,6 +49,10 @@ header nav .btn:hover {
   background: #515151;
 }
 
+main {
+  height: 50vh;
+}
+
 main .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +86,6 @@ footer {
   height: 10vh;
   background: #b79393;
   font-size: 1.1rem;
-  bottom: 0;
 }
 
 footer .flex-container {
@@ -94,7 +97,6 @@ footer .flex-container {
           justify-content: center;
   text-align: center;
   line-height: 8vh;
-  bottom: 0;
 }
 
 @media screen and (max-width: 740px) {
@@ -103,6 +105,9 @@ footer .flex-container {
   }
   header {
     height: 25vh;
+  }
+  main {
+    height: 75vh;
   }
   nav {
     display: -webkit-box;
@@ -121,6 +126,9 @@ footer .flex-container {
   }
   nav .btn {
     background: white;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   nav #logo {
     -webkit-box-pack: center;
