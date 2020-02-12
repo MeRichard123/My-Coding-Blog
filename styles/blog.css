@@ -58,7 +58,7 @@ footer .flex-container {
 
 .image {
   width: 60%;
-  min-width: 200px;
+  min-width: 1vw;
   height: auto;
   display: block;
   margin-left: auto;
