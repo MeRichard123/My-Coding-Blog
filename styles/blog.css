@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -64,12 +65,23 @@ footer .flex-container {
   margin-right: auto;
 }
 
+blockquote {
+  font-family: "Roboto Mono", monospace;
+  width: 80%;
+  border-left: 6px solid #515151;
+  border-radius: 2px;
+}
+
+blockquote h3 {
+  font-family: initial;
+}
+
 @media screen and (max-width: 745px) {
   main {
     width: 95%;
   }
   footer {
-    font-size: 50%;
+    font-size: 80%;
   }
 }
 /*# sourceMappingURL=blog.css.map */
