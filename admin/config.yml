@@ -9,6 +9,7 @@ collections:
   - name: "Blog"
     label: "Blog"
     folder: "Static"
+    widget: "string"
     create: true
     slug: "{{year}}-{{slug}}"
     fields:
