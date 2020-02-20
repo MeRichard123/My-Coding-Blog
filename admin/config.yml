@@ -8,7 +8,7 @@ public-folder: "Static"
 collections:
   - name: "Blog"
     label: "Blog"
-    folder: "Static/"
+    folder: "Static"
     create: true
     slug: "{{year}}-{{slug}}"
     fields:
