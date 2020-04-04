@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>My Build Process</title>
+  </head>
+  <body>
+    <header>
+      <img class="banner" src="./banner.png" alt="" />
+      <div class="back">
+        <a class="back" href="../index.html"
+          ><i class="fas fa-chevron-left"></i>Back</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="header">
+        <h5 id="Date">04/04/2020</h5>
+        <h1 id="title">My Website Process</h1>
+      </div>
+      <hr />
+      <p>
+        Although we are in quarantine, you can still learn something new in
+        development. Today I'd like to share with you my website process.
+      </p>
+      <p>
+        Every Web Developer has their own "flow" when building a website; either
+        for a personal project or a client. The main difference is that for a
+        client site, you probably have a deadline. Here is my process.
+      </p>
+      <h2>The Idea.</h2>
+      <p>
+        For me, this is the tough part. If you're building a client site; the
+        idea is given by the client, however for personal projects with the
+        purpose of practice it can be difficult to think of something that
+        inspires you and something you will finish. Chasing ideas is like the
+        universe, a never-ending story, so I let the ideas come to me. Generally
+        speaking, I carry with me a notebook for drafts. I write out the
+        requirements and features the app needs and draw a frame model to help
+        me in design.
+      </p>
+      <img src="./frame.jpg" alt="" class="image" />
+      <p>
+        But what if you need a project for a portfolio and you just can't think
+        of anything? In that case, there are many creative people out there who
+        have the ideas just waiting for you to use them. You can see an example
+        <a href="https://github.com/melanierichards/just-build-websites">here</a
+        >.
+      </p>
+      <h2>The Design</h2>
+      <p>
+        Once I have an idea I begin the design. Admittedly, I find Web Design
+        very difficult (yes harder than code). It takes me absolutely ages. With
+        or without a drawing I start throwing some ideas into Figma.
+        <b>Navigation menu &gt; Landing page &gt; Content</b> . During this
+        process, it is incredibly easy to feel lost. In my case scrolling
+        through <a href="https://dribbble.com/">Dribbble</a> helps to find
+        inspiration, there are thousands of websites on the web; which can
+        inspire your design. While creating a design it's a good practice to
+        start collecting all the assets you are going to need. This can include
+        images, icons and fonts - typography is an important aspect of any
+        website. Creating an assets folder while you are designing saves lots of
+        time in the long run. Some websites for icons include
+        <a href="https://fontawesome.com/">FontAwesome</a>,
+        <a href="https://iconmonstr.com/">IconMonstr</a> for images you can use
+        <a href="https://www.pexels.com/">Pexels</a> and of course there is
+        <a href="https://fonts.google.com/">Google Fonts</a>. Once I have
+        finished the desktop version <b>sometimes</b> I design for mobile,
+        however generally that happens in code as mobile layouts don't need to
+        be complex.
+      </p>
+      <h2>The Code</h2>
+      <p>
+        The code is where the fun comes in. I make a folder for scripts, assets,
+        and a folder for each page each with their own styles folder. From here
+        the HTML is easy to set up I try to use BEM (Block element modifier)
+        however, this doesn't always work out. For a CSS preprocessor, I use
+        SASS this allows me to create a component-like structure making the CSS
+        neat. I can create a navigation component and put the styles there; then
+        import it into "main.scss". As for code, by default, I code desktop
+        first, however as Kevin proposed
+        <a href="https://www.youtube.com/watch?v=0ohtVzCSHqs">here</a> it's much
+        easier to start with the minimum and add onto it, rather than
+        subtracting styles. For the last few projects, I have tried to do
+        mobile-first. When I make any website certain styles repeat, these I put
+        on code pen, so I can just grab them from there. Another useful tip for
+        saving time.
+      </p>
+      <img src="./figma.png" alt="" class="image" />
+      <h2>Post-Processing</h2>
+      <p>
+        I honestly try to do this while coding, but sometimes you just forget.
+        For some people things like alternative attributes for images are
+        instinctual, but I have to go back over the code and check
+        accessibility. To do this I have created the following checklist:
+      </p>
+      <img src="./checklist.png" alt="" class="image" />
+      <p>
+        At this stage, it's a good idea to test responsiveness. Whip up the old
+        <code>git init</code>, <code>git push</code> protocol and add it too
+        Github Pages. Then you can test all the devices you can to find what's
+        broken. If nothing then you have done well, If text is no longer centred
+        or the font is too big, you can make the necessary changes. This is
+        where the true sigh of relief comes, all you are doing now is the small
+        things that broke. Satisfying.
+      </p>
+      <h2>Closing</h2>
+      <p>
+        Now you are truly done. You can add the site to Netlify, gh-pages, etc.
+        At this point, I tend to write up the documentation in the GitHub readme
+        file. Then you can grab another cup of tea and look at all the hard work
+        you put in.
+      </p>
+    </main>
+    <footer id="footer">
+      <div class="flex-container">
+        <a href="https://richardcoric.netlify.com">Richard Coric</a>
+        <p>
+          &copy 2020 <i class="fas fa-camera-retro"></i> All Photos Were Taken
+          By Me
+        </p>
+      </div>
+    </footer>
+    <script src="./darkmode.js"></script>
+  </body>
+</html>
