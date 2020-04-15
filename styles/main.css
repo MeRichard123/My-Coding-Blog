@@ -75,6 +75,10 @@ main .title {
   text-decoration: underline;
 }
 
+main #cards-title-big {
+  font-size: 100%;
+}
+
 main .card {
   background: #e6c2c2;
   margin-bottom: 2.5rem;
